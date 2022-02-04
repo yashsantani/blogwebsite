@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+<div class="container-fluid">
+  <h1>Home</h1>
+  <h3><%= content %></h3>
+  <% whole_content.forEach(function(element){ %>
+  <h1><%= element.Title %></h1>
+  <p><%= element.Body.substring(0,100) + "........" %></p>
+  <a href="/posts/<%= element.Title%>">Read More</a>
+  <%})%>
+</div>
+
+<%- include("partials/footer.ejs") %>
