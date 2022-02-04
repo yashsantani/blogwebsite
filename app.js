@@ -9,7 +9,7 @@ const myname = "Hi i am Yash Santani";
 const homeStartingContent =
   "Hello welcome to my life i try to post something exciting that happens with me and yes i build this website and will fine tune it. If you find any errors please contact me through Contact us option. Enjoy......";
 const aboutContent =
-  "👀 I’m interested in AI ,ml and web dev and currently learning web dev. I'm looking to collaborate on projects of ML and web dev";
+  "I’m interested in AI ,ml and web dev and currently learning web dev. I'm looking to collaborate on projects of ML and web dev";
 const contactContent = "";
 
 var whole_content = [];
