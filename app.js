@@ -5,7 +5,9 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 var _ = require("lodash");
-const myname = "Hi i am Yash Santani";
+const team_members = [["Yash"]];
+const name = ["Rohan", "Yash"];
+const aboutrole = ["19BCE10067", "19BCE10042"];
 const homeStartingContent =
   "Hello welcome to my life i try to post something exciting that happens with me and yes i build this website and will fine tune it. If you find any errors please contact me through Contact us option. Enjoy......";
 const aboutContent =
@@ -13,6 +15,7 @@ const aboutContent =
 const contactContent = "";
 
 var whole_content = [];
+// var team_members = [];
 const app = express();
 
 app.set("view engine", "ejs");
@@ -52,8 +55,7 @@ app.get("/contact", function (req, res) {
 
 app.get("/about", function (req, res) {
   res.render("about", {
-    myname: myname,
-    content: aboutContent,
+    team_members: team_members,
   });
 });
 

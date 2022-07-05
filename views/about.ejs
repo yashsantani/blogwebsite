@@ -1,8 +1,36 @@
 <%- include("partials/header.ejs") %>
+<h1 class="text-center intro">About Us</h1>
 <div class="container-fluid">
-  <h1>About</h1>
-  <h3><%= myname %></h3>
-  <h4><%= content %></h4>
+  <br />
+  <div class="container">
+    <div class="row">
+      <% team_members.forEach(function(element){ %>
+      <div class="col-sm-4">
+        <div
+          class="card about-card"
+          style="width: 28rem; text-align: center; margin-left: 10%"
+        >
+          <div class="card-body">
+            <img
+              class="card-img-top"
+              src="https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png"
+              alt=" Member Image"
+              height="230px"
+              width="240px"
+            />
+            <h3 class="card-title about-title"><%= element[0] %></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <h3>
+          I’m interested in AI ,ml and web dev and currently learning web dev.
+          I'm looking to collaborate on projects of ML and web dev
+        </h3>
+      </div>
+      <%})%>
+    </div>
+  </div>
 </div>
 
 <%- include("partials/footer.ejs") %>

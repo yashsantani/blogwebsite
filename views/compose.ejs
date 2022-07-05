@@ -1,11 +1,10 @@
 <%- include("partials/header.ejs") %>
-
+<h1 class="text-center">Compose</h1>
 <div class="container-fluid">
-  <h1>Compose</h1>
   <form action="/compose" method="post">
     <div class="form-group">
       <label for="titleinputtitle">Title</label>
-      <input class="form-control" type="text" name="posttitle" />
+      <input class="form-control" type="text" name="posttitle" placeholder="Enter the title"/>
     </div>
     <div class="form-group">
       <label for="titleinputcontent">Post</label>
@@ -13,10 +12,9 @@
         class="form-control"
         name="post_content"
         cols="30"
-        rows="10"
+        rows="10" placeholder="Description...."
       ></textarea>
     </div>
-
     <button type="submit" name="button" class="btn btn-primary">Publish</button>
   </form>
 </div>

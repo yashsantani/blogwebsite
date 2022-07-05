@@ -1,7 +1,6 @@
 {
   "name": "ejs-challenge",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +17,14 @@
     "lodash": "^4.17.21",
     "mongoose": "^6.2.0",
     "mongose": "^0.0.2-security"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashsantani/blogwebsite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yashsantani/blogwebsite/issues"
+  },
+  "homepage": "https://github.com/yashsantani/blogwebsite#readme",
+  "description": ""
 }

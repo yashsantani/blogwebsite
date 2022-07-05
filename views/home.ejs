@@ -1,12 +1,40 @@
 <%- include("partials/header.ejs") %>
+<h1 class="text-center intro">Welcome to Blogg.In!</h1>
+<h3 class="text-center intro">
+  Hello welcome to my life i try to post something exciting that happens with me
+  and yes i build this website and will fine tune it. If you find any errors
+  please contact me through Contact us option. Enjoy......
+</h3>
 <div class="container-fluid">
-  <h1>Home</h1>
-  <h3><%= content %></h3>
-  <% whole_content.forEach(function(element){ %>
-  <h1><%= element.Title %></h1>
-  <p><%= element.Body.substring(0,100) + "........" %></p>
-  <a href="/posts/<%= element.Title%>">Read More</a>
-  <%})%>
+  <!-- <h3>
+      <%= content %>
+    </h3> -->
+  <div class="container">
+    <div class="row">
+      <% whole_content.forEach(function(element){ %>
+      <div class="col-sm-4">
+        <div class="card" style="width: 33.33rem">
+          <div class="card-body">
+            <img
+              class="card-img-top"
+              src="https://thebookofoi.files.wordpress.com/2018/03/how-blogging-works.jpg"
+              alt=" Blog Image"
+              height="180px"
+              width="260px"
+            />
+            <h3 class="card-title"><%= element.Title %></h3>
+            <p class="card-text">
+              <%= element.Body.substring(0,100) + "......" %>
+            </p>
+            <a href="/posts/<%= element.Title%>" class="btn btn-primary"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+      <%})%>
+    </div>
+  </div>
 </div>
 
 <%- include("partials/footer.ejs") %>
